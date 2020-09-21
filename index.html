@@ -1,61 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-     body{
-    overflow-x:hidden;
-    overflow-y:scroll;
-  }
-  /*Hide scrollBar From Chrome */
- body::-webkit-scrollbar {
-    display: none;
-}
-     *{
-       margin:0px;
-       padding:0px;
-    }
-    .personal{
-     float:left;
-      width:20%;
-      background-color:#36454f;
-      overflow:auto;
+ <style>
+   *{
+    padding:0px;
+    margin:0px;
+ }
+   #left_col{
+     height:100%;
+      
       position:fixed;
-      height:100%;
-   }
-   .heading{
-     margin:100px 20px 10px 20px;
-     color:white;
   }
-  .data{
-     color:white;
-     margin:10px 20px 10px 20px;
-   }
-  .data1{
-   color:black;
-   margin:25px 20px 10px 20px;
-  
+   img{
+        margin:25px 20px 0px 35px;
+       border-radius:50%;
+       left:50%
+       width:100px;
+       height:120px;
+       float:center;
+    }
+    .data{
+      color:white;
+    }
+    .badge{
+   padding:8px;
+  }
+
 }
-  .brk{
-   color:#f0f8ff;
-   margin-left:20px;
-   margin-right:20px;
-}
-  .tab{
-    margin:12px 20px 10px 20px;
-  
-}
-  .value{
-    margin:0px 20px 10px 20px;
-}
- 
-  </style>
+ </style>
  <meta charset ="utf-8">
- <meta name="description" content="This is a Resume">
- <title> Sayan </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="This is a HTML Boilaer Plate">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ <title>sayanpal_resume</title>
 </head>
 <body>
-  <div class="personal">
-     <h2 class="heading">Personal Details</h2>
+ <div class="container-fluid">
+   <div class="row">
+     <div class="col-sm-3" id="left_col" style="background-color:#36454f">
+    <img src="my.ico" alt="My Picture"> 
+     <h2 class="data">Personal Details</h2>
      <hr>
      <h3 class="data">Name:</h3>
      <p class="data">Sayan Pal</p>
@@ -67,23 +53,17 @@
      <p class="data">sayanp166@gmail.com</p>
       <h3 class="data">Github Profile Link:</h3>
      <a href="https://github.com/sayan2407/" target="_blank"style="text-decoration:none;"><p class="data">https://github.com/sayan2407/</p></a>
-     <br><br><br>
-     <h3 class="data">Languages:</h3>
-     <hr style="color:white">
-     <p class="data">English</p>
-       <p class="data">Bengali</p>
-      <p class="data">Hindi</p>
-      <br><br><br>
- </div> 
-  <div style="float:right;align:left;width:80%;padding-left:20px;overflow:auto;">
-    <h2 class="data1">Objective:</h2>
+     <br>
+     </div>
+    <div class="col-sm-9" style="padding-bottom:20px;float:right;align:left;overflow:hidden;">
+   <h2 class="data1">Objective:</h2>
     <hr class="brk"><br>
     <p class="value">To enhance my professional skills,capabilities and knowledge in an Organization which
     recognizes the value of hard work and trusts me with responsibilities and Challenges.</p>
     <h2 class="data1">Education:</h2>
     <hr class="brk"><br>
-        <table class="tab" style="width:100%" border="1">
-    <caption><h4>Bachelor Of Engineering(B.E),Computer Science</h4></caption
+    <table class="table table-striped">
+        <caption><h4>Bachelor Of Engineering(B.E),Computer Science</h4></caption
     <tr>
       <th>College Name</th>
        <th>University Name</th>
@@ -96,10 +76,9 @@
       <td>2021</td>
       <td>8.04</td>
    </tr>
-     
-   </table><br>
-       <table class="tab" style="width:100%" border="1">
-    <caption><h4>HighSeconary Education(XII)</h4></caption
+    </table>
+    <table class="table table-striped">
+       <caption><h4>HighSeconary Education(XII)</h4></caption
     <tr>
       <th>School Name</th>
        <th>Board Name</th>
@@ -112,10 +91,9 @@
       <td>2016</td>
       <td>84%</td>
    </tr>
-     
-   </table><br>
-   <table class="tab" style="width:100%" border="1">
-    <caption><h4>Secondary Education(X)</h4></caption
+    </table>
+    <table class="table table-striped">
+       <caption><h4>Secondary Education(X)</h4></caption
     <tr>
       <th>School Name</th>
        <th>Board Name</th>
@@ -128,11 +106,11 @@
       <td>2014</td>
       <td>80%</td>
    </tr>
-   </table><br><br>
-   <h2 class="data1">Training:</h2>
-   <hr class="brk"><br>
-    <table class="tab" style="width:100%" border="1">
-    <caption><h4>Android Application Development</h4></caption
+    </table>
+      <h2 class="data1">Training:</h2>
+      <hr class="brk"><br>
+    <table class="table table-striped">
+      <caption><h4>Android Application Development</h4></caption
     <tr>
       <th>Training Program</th>
        <th>Organization</th>
@@ -147,9 +125,9 @@
       <td>20/01/2020</td>
       <td>currently going on(Due to covid-19)</td>
    </tr>
-   </table><br>
-   <table class="tab" style="width:100%" border="1">
-    <caption><h4>Full Stack Web Development</h4></caption
+    </table>
+    <table class="table table-striped">
+      <caption><h4>Full Stack Web Development</h4></caption
     <tr>
       <th>Training Program</th>
        <th>Organization</th>
@@ -164,10 +142,10 @@
       <td>04/08/2020</td>
       <td>currently going on</td>
    </tr>
-   </table><br><br>
-   <h2 class="data1">Internship:</h2>
+    </table>
+    <h2 class="data1">Internship:</h2>
    <hr class="brk"><br>
-   <table class="tab" style="width:100%" border="1">
+   <table class="table table-striped">
     <caption><h4>Android Application Development</h4></caption
     <tr>
       <th>Profile</th>
@@ -184,13 +162,12 @@
       <td>Online</td>
        <td>24/04/2020</td>
       <td>24/06/2020</td>
-   </tr>
-    
+   </tr>  
    </table><br><br>
    <h2 class="data1">Projects:</h2>
     <hr class="brk"><br>
-    <table class="tab" style="width:100%" border="1">
-    <caption><h4>Android Application Projects</h4></caption
+   <table class="table table-striped">
+     <caption><h4>Android Application Projects</h4></caption
     <tr>
       <th>Project Title</th>
        <th>Description</th>
@@ -220,7 +197,7 @@
       <td>If you are in trouble you can share your location to your selected friends using message & ask for help.</td>
       <td>04/05/2020</td>
       <td>10/05/2020</td>
-      <td><a href="https://github.com/sayan2407/Woman-Safety">https://github.com/sayan2407/Woman-Safety</a></td>
+      <td><a href="https://github.com/sayan2407/BackUp">https://github.com/sayan2407/Woman-Safety</a></td>
    </tr>
      <tr>
       <td>Financial Calculator</td>
@@ -231,17 +208,57 @@
       <td>06/04/2020</td>
       <td><a href="https://github.com/sayan2407/Financial-Calculator">https://github.com/sayan2407/Financial-Calculator</a></td>
    </tr>
-   </table><br><br>
-    <h2 class="data1">Skills:</h2>
-    <hr class="brk"><br>
-    <table style=" cellpadding:20px;">
-      <tr>
-       <td>C</td>
-        <td>C++</td>
-         <td>Java</td>
-     <tr>
    </table>
-    
-  </div> 
+   <table class="table table-striped">
+    <caption><h4>Web Development Projects</h4></caption
+    <tr>
+      <th>Project Title</th>
+       <th>Description</th>
+       <th>Start Month</th>
+       <th>End Month</th>
+       <th>Project Link</th>
+      
+   </tr>
+    <tr>
+      <td>My Resume</td>
+      <td>I create my resume using HTML and CSS.<br>
+      This is my first website project</td>
+      <td>29/08/2020</td>
+      <td>ongoing</td>
+      <td><a href="https://sayan2407.github.io/Resume/" target="_blank" style="text-decoration:none">Click on my website</a></td>
+   </tr>
+  </table><br>
+     <h2 class="data1">Skills:</h2>
+    <hr class="brk"><br>
+     <ul class="list-group">
+       <li class="list-group-item">C Programming <span class="badge">Intermediate</span></li>
+       <li class="list-group-item">C++ Programming  <span class="badge">Intermediate</span></li>
+        <li class="list-group-item">JAVA Programming  <span class="badge">Intermediate</span></li> 
+       <li class="list-group-item">Python Programming  <span class="badge">Intermediate</span></li>
+       <li class="list-group-item">Android Development  <span class="badge">Intermediate</span></li>
+       <li class="list-group-item">Web Development  <span class="badge">Beginer</span></li>
+ 
+        <li class="list-group-item">HTML <span class="badge">Intermediate</span></li>
+       <li class="list-group-item">CSS  <span class="badge">Intermediate</span></li>
+        <li class="list-group-item">BOOTSTRAP 3  <span class="badge">Beginer</span></li> 
+       <li class="list-group-item">JAVASCRIPT  <span class="badge">Intermediate</span></li>
+       <li class="list-group-item">PHP <span class="badge">Intermediate</span></li>
+       <li class="list-group-item">Node.js <span class="badge">Beginer</span></li>
+       <li class="list-group-item">Firebase  <span class="badge">Intermediate</span></li>
+       <li class="list-group-item">PHP <span class="badge">Beginer</span></li>
+       <li class="list-group-item">MySql <span class="badge">Intermediate</span></li>
+     </ul>
+      <h2 class="data1">Hobbies:</h2>
+      <hr class="brk"><br>
+       <ul class="list-group">
+       <li class="list-group-item">Listening Music </li>
+       <li class="list-group-item">Playing mobile games</li>
+       <li class="list-group-item">searching new technology in google</li>
+       
+    </div>
+  </div>
+ <div>
+  
+  
 </body>
 </html>
